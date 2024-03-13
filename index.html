@@ -10,32 +10,32 @@
 </head>
 <body>
     <div class="Contenedor_Principal">
-        <form action="#" method="post">
+        <form action="#" method="post" name="FormularioCrearUsuario">
             <div class="Contenedor_GetDatos">
                 <div class="Contenedor_FirstName">
-                    <label for="FirstName">Nombre</label>
-                    <input type="text" id="FirstName" name="FirstName">
+                    <label for="FirstName">Nombres</label>
+                    <input type="text" id="FirstName" name="FirstName" placeholder="Ej:Juan Ándres" pattern="^(?=.{3,20}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$"  required>
                 </div>
                 <div class="Contenedor_LastName">
-                    <label for="LastName">Apellido</label>
-                    <input type="text" id="LastName" name="LastName">
+                    <label for="LastName">Apellidos</label>
+                    <input type="text" id="LastName" name="LastName" placeholder="Ej:Pérez Mora" pattern="^(?=.{3,20}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$"  required>
                 </div>
                 <div class="Contenedor_Email">
                     <label for="Email">Correo electronico</label>
-                    <input type="email" id="Email" name="Email">
+                    <input type="email" id="Email" name="Email" placeholder="Ej:mxszsa@example.es"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
                 </div>
                 <div class="Contenedor_Password">
                     <label for="Password">Contraseña</label>
-                    <input type="password" id="Password" name="Password">
+                    <input type="password" id="Password" name="Password" placeholder="Ej:HX!7Jc!m8&@p" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                 </div>
                 <div class="Contenedor_ComfirPassword">
                     <label for="ConfirPassword">Confirmar contraseña</label>
-                    <input type="password" id="ConfirPassword" name="ConfirPassword">
+                    <input type="password" id="ConfirPassword" name="ConfirPassword" placeholder="Ej:HX!7Jc!m8&@p" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                 </div>
-            </div>
-            <div class="Contenedor_Boton">
-                <div class="Contenedor_BotonEnviar">
-                    <button type="submit">Enviar</button>
+                <div class="Contenedor_Boton">
+                    <div class="Contenedor_BotonEnviar">
+                        <button id="BotonEnviar" type="submit">Enviar</button>
+                    </div>
                 </div>
             </div>
         </form>
