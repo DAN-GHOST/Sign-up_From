@@ -1,5 +1,12 @@
 //Estas son las funciones que permiten evaluar la información que los usuarios han suministrado en el formulario.
+function checkphoneNum(phoneNum){
+    if(phoneNum === "") return false;
+    const formato = /[!@#$%^&*_=[\]{};':"\|,.<>/?]+/;
+    return !(formato.test(string));
+}
+
 function checkFirstNameOrLastName(string){
+    if(phoneNum === "") return false;
     const formato = /[!@#$%^&*()_+-=[\]{};':"\|,.<>/?]+/;
     return !(formato.test(string));
 }
@@ -33,23 +40,27 @@ Form.addEventListener('submit', (event)=>{
     const firstName = document.getElementById('FirstName');
     const lastname = document.getElementById('LastName');
     const email = document.getElementById('Email');
+    const phoneNum = document.getElementById('PhoneNumber');
     const password = document.getElementById('Password');
     const confirPassword = document.getElementById('ConfirPassword');
     let valuePass = checkPasswordAndConfirPassword(password.value,confirPassword.value);
     let valueEmail = checkEmail(email.value);
+    let valuePhoneNum = checkphoneNum(phoneNum.value);
     let valueFisrtName = checkFirstNameOrLastName(firstName.value);
     let valueLastName = checkFirstNameOrLastName(lastname.value);
-    if(valuePass === true && valueEmail === true && valueFisrtName === true && valueLastName === true){
+    if(valuePass === true && valueEmail === true && valueFisrtName === true && valueLastName === true && valuePhoneNum === true){
         Form.submit();
     }else{
         const infotext_FirstName = document.querySelector('.infotext_FirstName');
         const infotext_LastName = document.querySelector('.infotext_LastName');
         const infotext_Email = document.querySelector('.infotext_Email');
+        const infotext_PhoneNum = document.querySelector('.infotext_PhoneNumber');
         const infotext_Password = document.querySelector('.infotext_Password');
         const infotext_ConfirPassword = document.querySelector('.infotext_ConfirPassword');
         if (valueFisrtName === false) infotext_FirstName.textContent = 'Están mal escritos los nombres.';
         if(valueLastName === false) infotext_LastName.textContent = 'Están mal escritos los apellidos.';
         if(valueEmail === false) infotext_Email.textContent = 'El correo está mal escrito.';
+        if(phoneNum === false) infotext_PhoneNum.textContent = 'El número está mal escrito.';
         if(valuePass === false){
             infotext_Password.textContent = 'La contraseña no coincide.';
             infotext_ConfirPassword.textContent = 'La contraseña no coincide.';
@@ -64,6 +75,8 @@ const lastname = document.getElementById('LastName');
 lastname.addEventListener('click',()=>{document.querySelector('.infotext_LastName').textContent = '';});
 const email = document.getElementById('Email');
 email.addEventListener('click',()=>{document.querySelector('.infotext_Email').textContent = '';});
+const phoneNumber = document.getElementById('PhoneNumber');
+phoneNumber.addEventListener('click',()=>{document.querySelector('.infotext_PhoneNumber').textContent = '';});
 const password = document.getElementById('Password');
 const confirPassword = document.getElementById('ConfirPassword');
 confirPassword.addEventListener('click',()=>{document.querySelector('.infotext_ConfirPassword').textContent = '';});
@@ -76,6 +89,7 @@ password.addEventListener('click',()=>{
 firstName.addEventListener('dblclick',()=>{firstName.value = '';});
 lastname.addEventListener('dblclick',()=>{lastname.value = '';});
 email.addEventListener('dblclick',()=>{email.value = '';});
+phoneNumber.addEventListener('dblclick',()=>{phoneNumber.value = '';});
 confirPassword.addEventListener('dblclick',()=>{confirPassword.value = '';});
 password.addEventListener('dblclick',()=>{
     password.value = '';
