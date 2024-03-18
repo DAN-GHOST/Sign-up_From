@@ -2,11 +2,11 @@
 function checkphoneNum(phoneNum){
     if(phoneNum === "") return false;
     const formato = /[!@#$%^&*_=[\]{};':"\|,.<>/?]+/;
-    return !(formato.test(string));
+    return !(formato.test(phoneNum));
 }
 
 function checkFirstNameOrLastName(string){
-    if(phoneNum === "") return false;
+    if(string === "") return false;
     const formato = /[!@#$%^&*()_+-=[\]{};':"\|,.<>/?]+/;
     return !(formato.test(string));
 }
