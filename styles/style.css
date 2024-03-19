@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif, Verdana, Geneva, Tahoma;
+    background-image: url("../img/imagen\ fondo.jpeg");
+    background-size: cover;
+}
+
+body,
+.Contenedor_Principal{
+    display: flex;
+}
+
+.Contenedor_Principal,
+.Contenedor_Informacion,
+.Sub_Contenedor_Info,
+.Contenedor_logo,
+.Contenedor_Formulario,
+.Contenedor_GetDatos,
+.Contenedor_FirstName,
+.Sub_Contenedor_FirstName,
+.Contenedor_infoText,
+.Contenedor_LastName,
+.Sub_Contenedor_LastName,
+.Contenedor_Email,
+.Sub_Contenedor_Email,
+.Contenedor_PhoneNumber,
+.Sub_Contenedor_PhoneNumber,
+.Contenedor_Password,
+.Sub_Contenedor_Password,
+.Contenedor_ComfirPassword,
+.Sub_Contenedor_ComfirPassword,
+.Contenedor_Boton,
+.Contenedor_BotonEnviar{
+    border: solid 1px  black;
+    margin: 5px;
+}
+
+.Contenedor_Principal{
+    flex-direction: row;
+    align-items: center;
+    background-color: aquamarine;
+    flex: 1;
+}

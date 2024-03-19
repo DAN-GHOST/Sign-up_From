@@ -10,69 +10,80 @@
 </head>
 <body>
     <div class="Contenedor_Principal">
-        <form action="#" method="post" name="FormularioCrearUsuario" id="Form_Sign-up" target="request">
-            <div class="Contenedor_GetDatos">
-                <div class="Contenedor_FirstName">
-                    <div class="Sub_Contenedor_FirstName">
-                        <label for="FirstName">Nombres</label>
-                        <input type="text" id="FirstName" name="FirstName" placeholder="Ej:Juan Ándres" pattern="^(?=.{3,20}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$"  required>
-                    </div>
-                    <div class="Contenedor_infoText">
-                        <p class="infotext_FirstName"></p>
-                    </div>
-                </div>
-                <div class="Contenedor_LastName">
-                    <div class="Sub_Contenedor_LastName">
-                        <label for="LastName">Apellidos</label>
-                        <input type="text" id="LastName" name="LastName" placeholder="Ej:Pérez Mora" pattern="^(?=.{3,20}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$"  required>
-                    </div>
-                    <div class="Contenedor_infoText">
-                        <p class="infotext_LastName"></p>
-                    </div>
-                </div>
-                <div class="Contenedor_Email">
-                    <div class="Sub_Contenedor_Email">
-                        <label for="Email">Correo electronico</label>
-                        <input type="email" id="Email" name="Email" placeholder="Ej:mxszsa@example.es"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
-                    </div>
-                    <div class="Contenedor_infoText">
-                        <p class="infotext_Email"></p>
-                    </div>
-                </div>
-                <div class="Contenedor_PhoneNumber">
-                    <div class="Sub_Contenedor_PhoneNumber">
-                        <label for="PhoneNumber">Número telefonico</label>
-                        <input type="text" id="PhoneNumber" name="number" placeholder="+99(999)9999999"  pattern="^[\+]\d{2,3}[\(]\d{2,3}[\)]\d{7}" required>
-                    </div>
-                    <div class="Contenedor_infoText">
-                        <p class="infotext_PhoneNumber"></p>
-                    </div>
-                </div>              
-                <div class="Contenedor_Password">
-                    <div class="Sub_Contenedor_Password">
-                        <label for="Password">Contraseña</label>
-                        <input type="password" id="Password" name="Password" placeholder="Ej:HX!7Jc!m8&@p" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
-                    </div>
-                    <div class="Contenedor_infoText">
-                        <p class="infotext_Password"></p>
-                    </div>
-                </div>
-                <div class="Contenedor_ComfirPassword">
-                    <idv class="Sub_Contenedor_ConfirPassword">
-                        <label for="ConfirPassword">Confirmar contraseña</label>
-                        <input type="password" id="ConfirPassword" name="ConfirPassword" placeholder="Ej:HX!7Jc!m8&@p" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
-                    </idv>
-                    <div class="Contenedor_infoText">
-                        <p class="infotext_ConfirPassword"></p>
-                    </div>
-                </div>
-                <div class="Contenedor_Boton">
-                    <div class="Contenedor_BotonEnviar">
-                        <button id="BotonEnviar" type="submit">Enviar</button>
-                    </div>
-                </div>
+        <div class="Contenedor_Informacion">
+            <div class="Sub_Contenedor_Info">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>you know you want to</p>
             </div>
-        </form>
+            <div class="Contenedor_logo">
+                <img src="#" alt="No hay aún una imagen.">
+            </div>
+        </div>
+        <div class="Contenedor_Formulario">
+            <form action="#" method="post" name="FormularioCrearUsuario" id="Form_Sign-up" target="request">
+                <div class="Contenedor_GetDatos">
+                    <div class="Contenedor_FirstName">
+                        <div class="Sub_Contenedor_FirstName">
+                            <label for="FirstName">Nombres</label>
+                            <input type="text" id="FirstName" name="FirstName" placeholder="Ej:Juan Ándres" pattern="^(?=.{3,20}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$"  required>
+                        </div>
+                        <div class="Contenedor_infoText">
+                            <p class="infotext_FirstName"></p>
+                        </div>
+                    </div>
+                    <div class="Contenedor_LastName">
+                        <div class="Sub_Contenedor_LastName">
+                            <label for="LastName">Apellidos</label>
+                            <input type="text" id="LastName" name="LastName" placeholder="Ej:Pérez Mora" pattern="^(?=.{3,20}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$"  required>
+                        </div>
+                        <div class="Contenedor_infoText">
+                            <p class="infotext_LastName"></p>
+                        </div>
+                    </div>
+                    <div class="Contenedor_Email">
+                        <div class="Sub_Contenedor_Email">
+                            <label for="Email">Correo electronico</label>
+                            <input type="email" id="Email" name="Email" placeholder="Ej:mxszsa@example.es"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+                        </div>
+                        <div class="Contenedor_infoText">
+                            <p class="infotext_Email"></p>
+                        </div>
+                    </div>
+                    <div class="Contenedor_PhoneNumber">
+                        <div class="Sub_Contenedor_PhoneNumber">
+                            <label for="PhoneNumber">Número telefonico</label>
+                            <input type="text" id="PhoneNumber" name="number" placeholder="+99(999)9999999"  pattern="^[\+]\d{2,3}[\(]\d{2,3}[\)]\d{7}" required>
+                        </div>
+                        <div class="Contenedor_infoText">
+                            <p class="infotext_PhoneNumber"></p>
+                        </div>
+                    </div>              
+                    <div class="Contenedor_Password">
+                        <div class="Sub_Contenedor_Password">
+                            <label for="Password">Contraseña</label>
+                            <input type="password" id="Password" name="Password" placeholder="Ej:HX!7Jc!m8&@p" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                        </div>
+                        <div class="Contenedor_infoText">
+                            <p class="infotext_Password"></p>
+                        </div>
+                    </div>
+                    <div class="Contenedor_ComfirPassword">
+                        <idv class="Sub_Contenedor_ConfirPassword">
+                            <label for="ConfirPassword">Confirmar contraseña</label>
+                            <input type="password" id="ConfirPassword" name="ConfirPassword" placeholder="Ej:HX!7Jc!m8&@p" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                        </idv>
+                        <div class="Contenedor_infoText">
+                            <p class="infotext_ConfirPassword"></p>
+                        </div>
+                    </div>
+                    <div class="Contenedor_Boton">
+                        <div class="Contenedor_BotonEnviar">
+                            <button id="BotonEnviar" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="./logics/logic.js"></script>
 </body>
