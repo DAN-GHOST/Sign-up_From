@@ -1,42 +1,85 @@
 body{
-    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif, Verdana, Geneva, Tahoma;
+    font-family: Verdana, Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif, Geneva, Tahoma;
     background-image: url("../img/imagen\ fondo.jpeg");
     background-size: cover;
+    height: 100vh;
+}
+
+.Contenedor_Principal{
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 60vh;
+    min-width: 280px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    border: solid 5px  rgb(255, 0, 0);
+}
+
+.Contenedor_Informacion{
+    flex-direction: column;
+}
+
+.Contenedor_Formulario{
+    flex-direction: row;
+}
+.Contenedor_logo{
+    display: flex;
+    align-items: center;
+}
+
+#img-logo{
+    min-width: 50%;
+    max-width: 15%;
 }
 
 body,
 .Contenedor_Principal{
     display: flex;
-}
-
-.Contenedor_Principal,
-.Contenedor_Informacion,
-.Sub_Contenedor_Info,
-.Contenedor_logo,
-.Contenedor_Formulario,
-.Contenedor_GetDatos,
-.Contenedor_FirstName,
-.Sub_Contenedor_FirstName,
-.Contenedor_infoText,
-.Contenedor_LastName,
-.Sub_Contenedor_LastName,
-.Contenedor_Email,
-.Sub_Contenedor_Email,
-.Contenedor_PhoneNumber,
-.Sub_Contenedor_PhoneNumber,
-.Contenedor_Password,
-.Sub_Contenedor_Password,
-.Contenedor_ComfirPassword,
-.Sub_Contenedor_ComfirPassword,
-.Contenedor_Boton,
-.Contenedor_BotonEnviar{
-    border: solid 1px  black;
-    margin: 5px;
-}
-
-.Contenedor_Principal{
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    background-color: aquamarine;
-    flex: 1;
+}
+
+.Contenedor_Informacion,
+.Contenedor_Formulario{
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    padding: 2px;
+    width: 100%;
+    border: solid 2px black;
+}
+
+.Contenedor_GetDatos > div{
+    border: solid 2px deeppink;
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+    padding: 2px;
+}
+
+.Contenedor_GetDatos > div > div{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px blue;
+    margin: 2px;
+    padding: 2px;
+}
+
+.Contenedor_GetDatos > div > div > .divForInput{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px white;
+    margin: 2px;
+    padding: 2px;
+}
+
+.Contenedor_GetDatos > div > div > .divForInput + div{
+    border: solid 2px indigo;
+}
+
+.Contenedor_GetDatos > div > div > .divForInput >div{
+    border: solid 2px green;
+    margin: 2px;
+    padding: 2px;
 }

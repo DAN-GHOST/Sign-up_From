@@ -5,81 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up From</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="#" alt="La imagen aún no se a definido.">
+    <link rel="icon" href="./img/enter.png" alt="Es una imagen tipo cartoom. Esta compuesta de dos formas una flecha con orietación a la derecha y el segundo son dos placas de color azul, una más oscura que la otro para dar a entender que es un espacio de entrada. La flecha señala a la posición de las dos placas que toma apariencia de una puerta.">
 
 </head>
 <body>
     <div class="Contenedor_Principal">
         <div class="Contenedor_Informacion">
-            <div class="Sub_Contenedor_Info">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-                <p>you know you want to</p>
-            </div>
             <div class="Contenedor_logo">
-                <img src="#" alt="No hay aún una imagen.">
+                <img id="img-logo" src="./img/—Pngtree—tennis sport logo vector design_3633435.png" alt="Es un logo con un estilo redondeado. Estelogo esta compuesto por un hexágono con las puntas redondeadas y un efecto en su área de formas geometricas triangulares. Dichas formas contiene diferentes colores con diversos tonos de: naranga rojo y azul. La tipografia es arial con un color gris. Y existe dos lineas de texto, una para el nombre de la empresa y otra para su eslogan. cada una tiene un tamaño propio y diferente a la otra.">
             </div>
         </div>
         <div class="Contenedor_Formulario">
             <form action="#" method="post" name="FormularioCrearUsuario" id="Form_Sign-up" target="request">
                 <div class="Contenedor_GetDatos">
-                    <div class="Contenedor_FirstName">
-                        <div class="Sub_Contenedor_FirstName">
-                            <label for="FirstName">Nombres</label>
-                            <input type="text" id="FirstName" name="FirstName" placeholder="Ej:Juan Ándres" pattern="^(?=.{3,20}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$"  required>
+                    <div class="Contenedor_FirstName_y_LastName">
+                        <div class="Contenedor_FirstName">
+                            <div class="divForInput Sub_Contenedor_FirstName">
+                                <div class="Contenedor_label_FirstName">
+                                    <label for="FirstName">Nombres:*</label>
+                                </div>
+                                <div class="Contenedor_type_FirstName">
+                                    <input type="text" id="FirstName" name="FirstName" placeholder="Juan Ándres" pattern="^(?=.{3,20}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$"  required>
+                                </div>
+                            </div>
+                            <div class="Contenedor_infoText">
+                                <p class="infotext_FirstName"></p>
+                            </div>
                         </div>
-                        <div class="Contenedor_infoText">
-                            <p class="infotext_FirstName"></p>
-                        </div>
-                    </div>
-                    <div class="Contenedor_LastName">
-                        <div class="Sub_Contenedor_LastName">
-                            <label for="LastName">Apellidos</label>
-                            <input type="text" id="LastName" name="LastName" placeholder="Ej:Pérez Mora" pattern="^(?=.{3,20}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$"  required>
-                        </div>
-                        <div class="Contenedor_infoText">
-                            <p class="infotext_LastName"></p>
-                        </div>
-                    </div>
-                    <div class="Contenedor_Email">
-                        <div class="Sub_Contenedor_Email">
-                            <label for="Email">Correo electronico</label>
-                            <input type="email" id="Email" name="Email" placeholder="Ej:mxszsa@example.es"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
-                        </div>
-                        <div class="Contenedor_infoText">
-                            <p class="infotext_Email"></p>
-                        </div>
-                    </div>
-                    <div class="Contenedor_PhoneNumber">
-                        <div class="Sub_Contenedor_PhoneNumber">
-                            <label for="PhoneNumber">Número telefonico</label>
-                            <input type="text" id="PhoneNumber" name="number" placeholder="+99(999)9999999"  pattern="^[\+]\d{2,3}[\(]\d{2,3}[\)]\d{7}" required>
-                        </div>
-                        <div class="Contenedor_infoText">
-                            <p class="infotext_PhoneNumber"></p>
-                        </div>
-                    </div>              
-                    <div class="Contenedor_Password">
-                        <div class="Sub_Contenedor_Password">
-                            <label for="Password">Contraseña</label>
-                            <input type="password" id="Password" name="Password" placeholder="Ej:HX!7Jc!m8&@p" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
-                        </div>
-                        <div class="Contenedor_infoText">
-                            <p class="infotext_Password"></p>
+                        <div class="Contenedor_LastName">
+                            <div class="divForInput Sub_Contenedor_LastName">
+                                <div class="Contenedor_label_LasName">
+                                    <label for="LastName">Apellidos:*</label>
+                                </div>
+                                <div class="Contenedor_type_LastName">
+                                    <input type="text" id="LastName" name="LastName" placeholder="Pérez Mora" pattern="^(?=.{3,20}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$"  required>
+                                </div>
+                            </div>
+                            <div class="Contenedor_infoText">
+                                <p class="infotext_LastName"></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="Contenedor_ComfirPassword">
-                        <idv class="Sub_Contenedor_ConfirPassword">
-                            <label for="ConfirPassword">Confirmar contraseña</label>
-                            <input type="password" id="ConfirPassword" name="ConfirPassword" placeholder="Ej:HX!7Jc!m8&@p" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
-                        </idv>
-                        <div class="Contenedor_infoText">
-                            <p class="infotext_ConfirPassword"></p>
+                    <div class="Contenedor_Email_yPhoneNumber">
+                        <div class="Contenedor_Email">
+                            <div class="divForInput Sub_Contenedor_Email">
+                                <div class="Contenedor_label_Email">
+                                    <label for="Email">Correo electronico:*</label>
+                                </div>
+                                <div class="Contenedor_type_Email">
+                                    <input type="email" id="Email" name="Email" placeholder="mxszsa@example.es"  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+                                </div>
+                            </div>
+                            <div class="Contenedor_infoText">
+                                <p class="infotext_Email"></p>
+                            </div>
+                        </div>
+                        <div class="Contenedor_PhoneNumber">
+                            <div class="divForInput Sub_Contenedor_PhoneNumber">
+                                <div class="Contenedor_label_PhoneNumber">
+                                    <label for="PhoneNumber">Número telefonico:*</label>
+                                </div>
+                                <div class="Contenedor_type_PhoneNumber">
+                                    <input type="text" id="PhoneNumber" name="number" placeholder="+99(999)9999999"  pattern="^[\+]\d{2,3}[\(]\d{2,3}[\)]\d{7}" required>
+                                </div>
+                            </div>
+                            <div class="Contenedor_infoText">
+                                <p class="infotext_PhoneNumber"></p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="Contenedor_Password_ConfirPassword">
+                        <div class="Contenedor_Password">
+                            <div class="divForInput Sub_Contenedor_Password">
+                                <div class="Contenedor_label_Password">
+                                    <label for="Password">Contraseña:*</label>
+                                </div>
+                                <div class="Contenedor_type_Password">
+                                    <input type="password" id="Password" name="Password" placeholder="HX!7Jc!m8&@p long=(8-12)" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                                </div>
+                            </div>
+                            <div class="Contenedor_infoText">
+                                <p class="infotext_Password"></p>
+                            </div>
+                        </div>
+                        <div class="Contenedor_ComfirPassword">
+                            <div class="divForInput Sub_Contenedor_ConfirPassword">
+                                <div class="Contenedor_label_ConfirPassword">
+                                    <label for="ConfirPassword">Confirmar contraseña:*</label>
+                                </div>
+                                <div class="Contenedor_type_ConfirPassword">
+                                    <input type="password" id="ConfirPassword" name="ConfirPassword" placeholder="HX!7Jc!m8&@p long=(8-12)" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                                </div>
+                            </div>
+                            <div class="Contenedor_infoText">
+                                <p class="infotext_ConfirPassword"></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="Contenedor_Boton">
-                        <div class="Contenedor_BotonEnviar">
-                            <button id="BotonEnviar" type="submit">Enviar</button>
-                        </div>
+                </div>
+                <div class="Contenedor_Boton">
+                    <div class="divForButtom Contenedor_BotonEnviar">
+                        <button id="BotonEnviar" type="submit">Enviar</button>
                     </div>
                 </div>
             </form>
