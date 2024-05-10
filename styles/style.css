@@ -1,40 +1,75 @@
+/*Este determina las tipografia y atributos que componen el cuerpo de la página.*/
 body{
     font-family: Verdana, Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif, Geneva, Tahoma;
-    background-image: url("../img/imagen\ fondo.jpeg");
+    background: url("../img/imagen\ fondo.jpeg");
+    position: relative;
     background-size: cover;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/*------------------------------------------*/
 
+/*Aquí están todas las eleciones del arbol dom que compoarte atributos.*/
 .Contenedor_Informacion,
 .Contenedor_Formulario{
     display: flex;
-    border: solid 2px black;
+    align-items: stretch;
+    border-radius: 5px;
 }
 
+#formUp,
+.Contenedor_Boton,
 .Contenedor_GetDatos,
 .Contenedor_GetDatos > div,
 .Contenedor_GetDatos > div > div,
 .Contenedor_GetDatos > div > div > .divForInput,
 .Contenedor_GetDatos > div > div > .divForInput + div,
-.Contenedor_GetDatos > div > div > .divForInput >div{
+.Contenedor_GetDatos > div > div > .divForInput > div{
     display: flex;
+    border-radius: 5px;
     margin: 2px;
     padding: 2px;
 }
 
+/*Este se utiliza para ajustar el tamaño de la tipografia dependiendo del áre de la pantalla*/
+p,
+input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 1.3vw, 3rem);
+}
+/*-------------------------------------*/
+/*---------------------------------------------*/
+
+/*Seleciones unicas del arbol dom*/
 .Contenedor_Principal{
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     margin: 10px;
     padding: 10px;
-    width: 60vh;
+    width: 80vh;
     min-width: 280px;
     border-radius: 10px;
-    background-color: aquamarine;
-    border: solid 5px  rgb(255, 0, 0);
+    border: 1px solid #d4d4d460;
+    background-color: #68686810;
+    backdrop-filter: blur(0.9rem);
+}
+
+p{
+    color: #535353;
+}
+
+.Contenedor_Formulario{
+    margin: 2px;
+}
+
+.Contenedor_Informacion{
+    margin: 2px 16px;
+    background-color: #d4d4d494;
+    backdrop-filter: blur(0.9rem);
 }
 
 .Contenedor_logo{
@@ -44,39 +79,75 @@ body{
 }
 
 #img-logo{
-    min-width: 50%;
-    max-width: 15%;
-}
-
-.Contenedor_GetDatos{
-    flex-direction: column;
-    align-items: stretch;
-    border: solid 2px chartreuse;
+    min-width: 35%;
+    max-width: 20%;
 }
 
 #formUp{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 
-.Contenedor_GetDatos > div{
-    border: solid 2px deeppink;
+.Contenedor_GetDatos{
+    width: 100%;
+    flex-direction: column;
 }
 
 .Contenedor_GetDatos > div > div{
+    width: 100%;
     flex-direction: column;
-    border: solid 2px blue;
+    background-color: #d4d4d460;
+    backdrop-filter: blur(0.9rem);
 }
 
 .Contenedor_GetDatos > div > div > .divForInput{
     flex-direction: column;
-    border: solid 2px white;
+    background-color: #d4d4d450;
+    backdrop-filter: blur(0.9rem);
 }
 
 .Contenedor_GetDatos > div > div > .divForInput + div{
-    border: solid 2px indigo;
+    background-color: #d4d4d450;
+    backdrop-filter: blur(0.9rem);
 }
 
-.Contenedor_GetDatos > div > div > .divForInput >div{
-    border: solid 2px green;
+input{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
 }
+
+input:focus-visible{
+outline: 2px dotted  rgb(49, 49, 49);
+}
+
+
+/*-------------------------------------------------------------*/
+
+/*Estos @media se engargan de evitar que se quieveren los divs al deminuir el tamaño a width:546px y heidht: 595px*/
+@media (max-width: 546px){
+
+    .Contenedor_GetDatos > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Contenedor_GetDatos > div > div{
+        width: 97%;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-height:595px){
+    .Contenedor_GetDatos > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Contenedor_GetDatos > div > div{
+        flex-direction: column;
+        width: 97%;
+    }
+}
+/*------------------------------------------------------*/
