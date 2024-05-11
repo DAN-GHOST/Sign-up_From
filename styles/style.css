@@ -121,6 +121,34 @@ input:focus-visible{
 outline: 2px dotted  rgb(49, 49, 49);
 }
 
+input:invalid{
+    background: #ff000020;
+}
+
+input:valid{
+    background: #1eff0020;
+}
+
+#BotonEnviar{
+    
+    border-radius: 5px;
+    border: 0;
+    background: #ffffff80;
+}
+
+#BotonEnviar:hover{
+    background: #1eff0020;
+    .txtBoton{
+        color: rgba(255, 255, 255, 0.80);
+    }
+}
+
+#BotonEnviar:active{
+    background: #1eff00a1;
+    .txtBoton{
+        color: #ffffffa1;
+    }
+}
 
 /*-------------------------------------------------------------*/
 
