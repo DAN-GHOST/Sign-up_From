@@ -32,6 +32,24 @@ body{
     padding: 2px;
 }
 
+#formUp,
+.Contenedor_GetDatos,
+.Contenedor_GetDatos > div > div{
+    width: 100%;
+}
+
+.Contenedor_GetDatos,
+.Contenedor_GetDatos > div > div,
+.Contenedor_GetDatos > div > div > .divForInput{
+    flex-direction: column;
+}
+
+.Contenedor_GetDatos > div > div > .divForInput,
+.Contenedor_GetDatos > div > div > .divForInput + div{
+    background-color: #d4d4d450;
+    backdrop-filter: blur(0.9rem);
+}
+
 /*Este se utiliza para ajustar el tamaño de la tipografia dependiendo del áre de la pantalla*/
 p,
 input{
@@ -83,30 +101,8 @@ p{
     max-width: 20%;
 }
 
-#formUp{
-    width: 100%;
-}
-
-.Contenedor_GetDatos{
-    width: 100%;
-    flex-direction: column;
-}
-
 .Contenedor_GetDatos > div > div{
-    width: 100%;
-    flex-direction: column;
     background-color: #d4d4d460;
-    backdrop-filter: blur(0.9rem);
-}
-
-.Contenedor_GetDatos > div > div > .divForInput{
-    flex-direction: column;
-    background-color: #d4d4d450;
-    backdrop-filter: blur(0.9rem);
-}
-
-.Contenedor_GetDatos > div > div > .divForInput + div{
-    background-color: #d4d4d450;
     backdrop-filter: blur(0.9rem);
 }
 
@@ -130,7 +126,6 @@ input:valid{
 }
 
 #BotonEnviar{
-    
     border-radius: 5px;
     border: 0;
     background: #ffffff80;
@@ -154,17 +149,14 @@ input:valid{
 
 /*Estos @media se engargan de evitar que se quieveren los divs al deminuir el tamaño a width:546px y heidht: 595px*/
 @media (max-width: 546px){
-
     .Contenedor_GetDatos > div{
         display: flex;
         flex-direction: column;
     }
-
     .Contenedor_GetDatos > div > div{
         width: 97%;
         flex-direction: column;
     }
-
 }
 
 @media (max-height:595px){
@@ -172,7 +164,6 @@ input:valid{
         display: flex;
         flex-direction: column;
     }
-
     .Contenedor_GetDatos > div > div{
         flex-direction: column;
         width: 97%;
