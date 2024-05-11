@@ -34,8 +34,9 @@ function checkEmail (Email){
     return false;
 }
 //EVENTO que permite verificar que la información suministrada en formulario sea correcta y que esta sea enviada, en el caso contrario no envía nada e informa al usuario que debe corregir el problema.
-const Form = document.getElementById('Form_Sign-up');
+const Form = document.querySelector('.Form_Sign-up');
 Form.addEventListener('submit', (event)=>{
+    console.log("Hola mundo");
     event.preventDefault();
     const firstName = document.getElementById('FirstName');
     const lastname = document.getElementById('LastName');

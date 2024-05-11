@@ -12,7 +12,9 @@ body{
 
 /*Aquí están todas las eleciones del arbol dom que compoarte atributos.*/
 .Contenedor_Informacion,
-.Contenedor_Formulario{
+.Contenedor_Formulario,
+.Contenedor_LogIn,
+.Contenedor_infoText{
     display: flex;
     align-items: stretch;
     border-radius: 5px;
@@ -38,6 +40,7 @@ body{
     width: 100%;
 }
 
+.Contenedor_Formulario,
 .Contenedor_GetDatos,
 .Contenedor_GetDatos > div > div,
 .Contenedor_GetDatos > div > div > .divForInput{
@@ -47,6 +50,12 @@ body{
 .Contenedor_GetDatos > div > div > .divForInput,
 .Contenedor_GetDatos > div > div > .divForInput + div{
     background-color: #d4d4d450;
+    backdrop-filter: blur(0.9rem);
+}
+
+.Contenedor_LogIn,
+.Contenedor_Informacion{
+    background-color: #d4d4d494;
     backdrop-filter: blur(0.9rem);
 }
 
@@ -86,8 +95,6 @@ p{
 
 .Contenedor_Informacion{
     margin: 2px 16px;
-    background-color: #d4d4d494;
-    backdrop-filter: blur(0.9rem);
 }
 
 .Contenedor_logo{
@@ -145,6 +152,21 @@ input:valid{
     }
 }
 
+.Contenedor_LogIn{
+    justify-content: center;
+    margin-right: 8px;
+    margin-left: 16px;
+    border:  2px solid rgba(255, 255, 255, 0.80);
+    border-radius: 5px;
+}
+
+.Enlace{
+    color:orange;
+}
+
+.Contenedor_infoText{
+    height: 100%;
+}
 /*-------------------------------------------------------------*/
 
 /*Estos @media se engargan de evitar que se quieveren los divs al deminuir el tamaño a width:546px y heidht: 595px*/
